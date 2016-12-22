@@ -5,7 +5,7 @@
   text-align: center;
 }
 
-div {
+.runner {
   display: inline-block;
   vertical-align: middle;
   // text-align: center;
@@ -15,7 +15,7 @@ div {
 .photo {
   width: 300px;
   height: 450px;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 span {
@@ -38,4 +38,8 @@ p {
   background-color: green;
   width: 150px;
   height: 150px;
+  display: inline-block;
+  vertical-align: middle;
+  // text-align: center;
+  margin: 15px;
 }

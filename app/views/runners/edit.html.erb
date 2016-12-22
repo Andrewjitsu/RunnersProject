@@ -1,15 +1,15 @@
 
-<div class="photo">
+<!-- <div class="photo">
   <fieldset>
 
   </fieldset>
-</div>
+</div> -->
 
-<div>
+<div class="runner">
 <form action="/runners" method="POST">
 <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
 <input type="hidden" name="_method" value="patch">
-	
+
   <p> First Name: <input type="text" name="first_name" value="<%=@runner.first_name%>"> </p>
   <p> Last Name: <input type="text" name="last_name" value="<%=@runner.last_name%>"> </p>
   <p> Shoe Size: <input type="string" name= "shoe_size" value="<%=@runner.shoe_size%>"> </p>

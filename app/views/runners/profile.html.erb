@@ -1,18 +1,16 @@
 
 
-<h2></h2><a href="/runners/<%=@runner.id%>/edit"> Edit Profile</a> | <a href="/leaderboard">Leaderboard</a> | <a href="/logout">Logout</a>
-<hr>
 
 <div class="Profile">
 
 
-    <div>
+    <div class="runner">
       <fieldset class="photo">
-        <!-- photo goes here -->
+        <img src="http://placehold.it/300x400">
       </fieldset>
     </div>
 
-    <div>
+    <div class="runner">
       <h2><%= @runner.first_name%></h2>
       <h2><%= @runner.last_name%></h2>
       <p> Gender: <%=@runner.gender%> </p>
