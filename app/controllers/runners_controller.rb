@@ -7,6 +7,7 @@ class RunnersController < ApplicationController
   	@runner=Runner.find(params[:id])
   end
   def leaderboard
+    @r=Runner.find(session[:user_id])
   	@runner=Runner.order(shoe_size: :desc)
   end
   def update

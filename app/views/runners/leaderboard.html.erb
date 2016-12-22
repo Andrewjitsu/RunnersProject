@@ -1,4 +1,6 @@
-<table>
+<div class="container">
+	
+<table class="table table-striped table-responsive">
 	<h1>Leaderboard</h1>
 	<thead>
 	<tr>
@@ -16,4 +18,5 @@
 		<% end %>
 	</tbody>
 </table><br>
-	<%=link_to 'Go Back', url_for(:back)%>
+	<a class="btn btn-danger" href="/runners/<%=@r.id%>">Go Back</a>
+</div>

@@ -3,6 +3,7 @@ class SessionsController < ApplicationController
   end
   def create
     if Runner.create(first_name:params[:first_name],last_name:params[:last_name],email:params[:email],password:params[:password],gender:params[:gender],shoe_size:params[:shoe_size])
+      flash[:notice]="Successfully Registered"
       redirect_to "/"
     end
   end
