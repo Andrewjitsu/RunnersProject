@@ -2,13 +2,11 @@ class SessionsController < ApplicationController
   def index
     @runner=Runner.order(shoe_size: :desc)
   end
-  def register
-
-    end
   def create
-    if Runner.create(first_name:params[:first_name],last_name:params[:last_name],email:params[:email],password:params[:password],gender:params[:gender],shoe_size:params[:shoe_size])
+    @runner=Runner.new(user_params)
+    if @runner.save
       flash[:notice]="Successfully Registered"
-      redirect_to "/"
+      redirect_to "/runners"
     end
   end
   def login
@@ -20,11 +18,13 @@ class SessionsController < ApplicationController
         redirect_to "/"
       end
   end
-  def login1
-  end
+
   def destroy
     reset_session
     redirect_to '/'
   end
-
+  private
+    def user_params
+      params.require(:runner).permit(:first_name, :last_name, :email, :password, :gender, :shoe_size, :avatar)
+    end
 end

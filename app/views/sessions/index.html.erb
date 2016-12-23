@@ -9,12 +9,6 @@
     <!-- Header -->
       <header id="header" class="alt">
         <h1>Powered by <strong>Git Reqt</strong></h1>
-        <nav id="nav">
-          <ul>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/register">Register</a></li>
-          </ul>
-        </nav>
       </header>
 
       <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
@@ -29,9 +23,9 @@
 
       <!-- One -->
           <section class="container">
-              <h3>Leaderboard</h3>
+              <h4>Leaderboard</h4>
               <div class="table-wrapper">
-                <table>
+                <table class="alt">
                   <thead>
                     <tr>
                       <th>Name</th>
@@ -39,13 +33,14 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <% @runner.each do |r| %>
-                      <tr>
-                        <td><%=r.first_name%> <%=r.last_name%></td>
-                        <td><%=r.shoe_size%></td>
-                      </tr>
+                  <%@runner.each do |r|%>
+                    <tr>
+                      <td><%=r.first_name%> <%=r.last_name%></td>
+                      <td><%=r.shoe_size%></td>
+                    </tr>
                     <% end %>
                   </tbody>
+                  
                 </table>
               </div>
             </section>

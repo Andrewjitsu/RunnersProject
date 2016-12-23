@@ -1,45 +1,36 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Home</a>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/logout">Logout</a></li>
       </ul>
-    </div>/.navbar-collapse
-  </div>/.container-fluid
+    </div>
+  </div>
 </nav>
 
-<div class="Profile">
+<div class="profile">
 
-
+  <% if @runners %>
+  <% @runners.each do |r|%>
     <div class="runner">
       <fieldset class="photo">
-        <img class="img-circle">
+        <img class="img-circle"<%= image_tag r.avatar.url %> >
       </fieldset>
-    </div>
-
-    <div class="runner">
-      <h2><%= @runner.first_name%></h2>
-      <h2><%= @runner.last_name%></h2>
-      <p> Gender: <%=@runner.gender%> </p>
-      <p> Email: <%=@runner.email%> </p>
+    
+      <h2><%= r.first_name%></h2>
+      <h2><%= r.last_name%></h2>
+      <p> Gender: <%=r.gender%> </p>
+      <p> Email: <%=r.email%> </p>
     <fieldset>
-      <span> <%=@runner.shoe_size%> </span><br>
+      <span> <%=r.shoe_size%> </span><br>
       Shoe Size
     </fieldset>
+    <%end%>
+    <%end%>
+</div><br>
 
-    </div><br>
+</div> 
 
-</div> profile
-<hr>
 
 
 <!-- shoe gallery -->
@@ -88,14 +79,10 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+     <!-- <section id="four" class="wrapper style4 special">
+          
+    </section> -->
 </div>
-<!-- <div class="item">
-</div>
-<div class="item">
-</div>
-<div class="item">
-</div>
-<div class="item">
-</div> -->
+
 
       

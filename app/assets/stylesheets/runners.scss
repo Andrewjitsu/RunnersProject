@@ -1,23 +1,46 @@
 // Place all the styles related to the Runners controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.Profile {
+.profile {
   text-align: center;
+  background-color: black;
 }
-
+form{
+  border: 1px solid black;
+  padding: 5px;
+}
+.wrapper.style4 {
+      background-attachment: fixed;
+      background-image: url("images/overlay.png"), url("../images/path.jpg");
+      background-position: center top;
+      background-size: cover;
+      height: 400px;
+    }
+//.wrapper.style5 {
+      //background-attachment: fixed;
+      //background-image: url("images/overlay.png"), url("../images/runners.jpg");
+     // background-position: center bottom;
+     // background-size: cover;
+     // height: 400px;
+   // }
 .runner {
   display: inline-block;
   vertical-align: middle;
   // text-align: center;
   margin: 15px;
 }
-
+.runner, h2, p{
+  color:white;
+}
+.img-circle{
+  margin-top:5px;
+}
 .photo {
   width: 300px;
   height: 250px;
   margin-left: 35px;
- 
-  background:black;
+  
+  //background:black;
   
 }
 
@@ -30,6 +53,7 @@ span {
 
 h2 {
   margin: 0px;
+  text-align:center;
 }
 
 p {
@@ -45,7 +69,8 @@ p {
 }
 
 #myCarousel{
-  height: 350px;
+  height: 300px;
+  margin-bottom: 100px;
 }
 //
 .item {
@@ -56,5 +81,5 @@ p {
   vertical-align: middle;
   // text-align: center;
   // margin: 15px;
-  transform: scale(10%);
+  transform: none;
 }
