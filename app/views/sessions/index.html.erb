@@ -1,52 +1,3 @@
-  <!-- <div class="container">
-  <div class="register">
-      
-    
-      <% if flash[:notice]%>
-      <%= flash[:notice]%>
-      <% end %>
-    
-  <h1>Register Here:</h1>
-  <form class="register" action="/create" method="post">
-  <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
-  <p> <label>First Name:
-  <input type="text" class="form-control" name="first_name"></label> </p>
-  <p> <label>Last Name:
-  <input type="text" class="form-control" name="last_name"></label> </p>
-  <p> <label>Email:
-  <input type="text" class="form-control" name="email"></label> </p>
-  <p> <label>Password:
-  <input type="text" class="form-control" name="password"></label> </p>
-  <p> <label>Shoe Size:
-  <input type="number" class="form-control" name="shoe_size"></label> </p>
-  <p> <label>Gender
-  <input type="text" class="form-control" name="gender"></label> </p>
-  <input type="submit" class="btn btn-primary" value="Register">
-</form>
-  </div>
-<div class="login">
-  <h1>Login Here:</h1>
-  <form action="/login" method="post">
-  <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
-  <div class="form-group">
-    
-    <label>Email: <input type="text" name="email" class="form-control"></label>
-  </div>
-  <div class="form-group">
-    
-    <label>Password: <input type="text" class="form-control" name="password"></label>
-  </div>
-  <input class="btn btn-primary" type="submit" value="Submit">
-</form>
-</div>
-</div> -->
-<!DOCTYPE HTML>
-<!--
-  Spatial by TEMPLATED
-  templated.co @templatedco
-  Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<html>
   <head>
     <title>Shoe Runners Home</title>
     <meta charset="utf-8" />
@@ -71,7 +22,6 @@
     <!-- Banner -->
       <section id="banner">
         <h2>Shoe Runners</h2>
-        <p>It's not about the shoes, it's about what you do in them...</p>
         <ul class="actions">
           <li><a href="/runners" class="button special big">Get Started</a></li>
         </ul>
@@ -100,120 +50,43 @@
               </div>
             </section>
               
-        <!-- <section id="one" class="wrapper style1">
-          <div class="container 75%">
-            <div class="row 200%">
-              <div class="6u 12u$(medium)">
-                <header class="major">
-                  <h2>Maecenas luctus lectus</h2>
-                  <p>Perspiciatis doloremque recusandae dolor</p>
-                </header>
-              </div>
-              <div class="6u$ 12u$(medium)">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ea mollitia corporis id, distinctio sunt veritatis officiis dolore reprehenderit deleniti voluptatibus harum magna, doloremque alias quisquam minus, eaque. Feugiat quod, nesciunt! Iste quos ipsam, iusto sit esse.</p>
-                <p>Dolorum aspernatur maxime libero ratione quidem distinctio, placeat fugiat laborum voluptatum enim neque soluta vel sunt id ex veritatis. Labore rerum, odit sapiente, alias mollitia magnam exercitationem modi amet earum quia atque ipsum voluptas asperiores quas laboriosam.</p>
-              </div>
-            </div>
-          </div>
-        </section> -->
 
       <!-- Two -->
         <section id="two" class="wrapper style2 special">
           <div class="container">
             <header class="major">
-              <h2>Fusce ultrices fringilla</h2>
-              <p>Maecenas vitae tellus feugiat eleifend</p>
+              <h2>The Spirit of Running</h2>
+              <p>Just take the first step...</p>
             </header>
             <div class="row 150%">
               <div class="6u 12u$(xsmall)">
                 <div class="image fit captioned">
-                  <%= image_tag 'pic02.jpg' %>
-                  <h3>Lorem ipsum dolor sit amet.</h3>
+                  <%= image_tag 'pic03.jpg' %>
+                  <h3>Set aside a time solely for running</h3>
                 </div>
               </div>
               <div class="6u$ 12u$(xsmall)">
                 <div class="image fit captioned">
-                  <%= image_tag 'pic03.jpg' %>
-                  <h3>Illum, maiores tempora cupid?</h3>
+                  <%= image_tag 'pic02.jpg' %>
+                  <h3>Running can get you back on track</h3>
                 </div>
               </div>
             </div>
-            <ul class="actions">
-              <li><a href="#" class="button special big">Nulla luctus</a></li>
-              <li><a href="#" class="button big">Sed vulputate</a></li>
-            </ul>
           </div>
         </section>
 
-      <!-- Three -->
-        <section id="three" class="wrapper style1">
-          <div class="container">
-            <header class="major special">
-              <h2>Mauris vulputate dolor</h2>
-              <p>Feugiat sed lorem ipsum magna</p>
-            </header>
-            <div class="feature-grid">
-              <div class="feature">
-                <div class="image rounded"><%= image_tag 'pic04.jpg' %></div>
-                <div class="content">
-                  <header>
-                    <h4>Lorem ipsum</h4>
-                    <p>Lorem ipsum dolor sit</p>
-                  </header>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore esse tenetur accusantium porro omnis, unde mollitia totam sit nesciunt consectetur.</p>
-                </div>
-              </div>
-              <div class="feature">
-                <div class="image rounded"><%= image_tag 'pic05.jpg' %></div>
-                <div class="content">
-                  <header>
-                    <h4>Recusandae nemo</h4>
-                    <p>Ratione maiores a, commodi</p>
-                  </header>
-                  <p>Animi mollitia optio culpa expedita. Dolorem alias minima culpa repellat. Dolores, fuga maiores ut obcaecati blanditiis, at aperiam doloremque.</p>
-                </div>
-              </div>
-              <div class="feature">
-                <div class="image rounded"><%= image_tag 'pic06.jpg' %></div>
-                <div class="content">
-                  <header>
-                    <h4>Laudantium fugit</h4>
-                    <p>Possimus ex reprehenderit eaque</p>
-                  </header>
-                  <p>Maiores iusto inventore fugit architecto est iste expedita commodi sed, quasi feugiat nam neque mollitia vitae omnis, ea natus facere.</p>
-                </div>
-              </div>
-              <div class="feature">
-                <div class="image rounded"><%= image_tag 'pic07.jpg' %></div>
-                <div class="content">
-                  <header>
-                    <h4>Porro aliquam</h4>
-                    <p>Quaerat, excepturi eveniet laboriosam</p>
-                  </header>
-                  <p>Vitae earum unde, autem labore voluptas ex, iste dolorum inventore natus consequatur iure similique obcaecati aut corporis hic in! Porro sed.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+      
 
       <!-- Four -->
         <section id="four" class="wrapper style3 special">
-          <div class="container">
-            <header class="major">
-              <h2>Aenean elementum ligula</h2>
-              <p>Feugiat sed lorem ipsum magna</p>
-            </header>
-          </div>
+          
         </section>
 
     <!-- Footer -->
       <footer id="footer">
         <div class="container">
           <ul class="copyright">
-            <li>&copy; Untitled</li>
-            <li>Design: <a href="http://templated.co">TEMPLATED</a></li>
-            <li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+            <li>&copy; 2016 Shoe Runners</li>
           </ul>
         </div>
       </footer>

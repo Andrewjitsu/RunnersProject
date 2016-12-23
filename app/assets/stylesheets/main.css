@@ -1658,7 +1658,7 @@
 		}
 
 	strong, b {
-		color: #484848;
+		color: #FFFFFF;
 		font-weight: 700;
 	}
 
@@ -2738,6 +2738,7 @@
 			background-image: url("images/overlay.png"), url("../images/road.jpg");
 			background-position: center center;
 			background-size: cover;
+			height: 400px;
 		}
 
 			.wrapper.style3 header.major {
@@ -2901,7 +2902,7 @@
 			}
 
 				#header.alt nav a {
-					color: #ddd;
+					color: #FFFFFF;
 				}
 
 					#header.alt nav a:active, #header.alt nav a:hover {
@@ -3090,13 +3091,12 @@
 	#banner {
 		padding: 16em 0 13em 0;
 		background-attachment: fixed;
-		background-image: url("images/overlay.png"), url("../images/banner.jpg");
-		background-position: center top;
+		background-image: url("images/overlay.png"), url("../images/road1.png");
+		background-position: center bottom;
 		background-size: cover;
 		line-height: 1.75;
 		text-align: center;
 	}
-
 		#banner:last-child {
 			margin-bottom: 0;
 		}
@@ -3110,10 +3110,12 @@
 		}
 
 		#banner p {
-			color: #aaa;
+			color: #FFFFFF;
 			font-size: 1.5em;
 			margin-bottom: 1.75em;
 			text-transform: uppercase;
+			/*background-color: grey;*/
+			/*width: 700px;*/
 		}
 
 		@media screen and (max-width: 1280px) {
