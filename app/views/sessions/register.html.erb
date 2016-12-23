@@ -1,13 +1,28 @@
-<section class="container">
-	<h3>Register</h3>
-	<form method="post" action="#">
-		<div class="row uniform 50%">
-			<div class="6u 12u$(xsmall)">
-				<input type="text" name="name" id="name" value="" placeholder="Name" />
-			</div>
-			<div class="6u$ 12u$(xsmall)">
-				<input type="email" name="email" id="email" value="" placeholder="Email" />
-			</div>
-			</div>
-			</form>
-</section>
+<div class="container">
+
+
+<form class="form-group" action="/create" method="post">
+<input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+<p> <label>First Name:
+<input type="text" class="form-control" name="first_name"></label> </p>
+<p> <label>Last Name:
+<input type="text" class="form-control" name="last_name"></label> </p>
+<p> <label>Email:
+<input type="text" class="form-control" name="email"></label> </p>
+<p> <label>Password:
+<input type="text" class="form-control" name="password"></label> </p>
+<p> <label>Shoe Size:
+<input type="number" class="form-control" name="shoe_size"></label> </p>
+<p> <label>Gender
+<input type="text" class="form-control" name="gender"></label> </p>
+<input type="submit" class="btn btn-default" value="Register">
+</form>
+<br>
+
+<form class="form-group" action="/login" method="post">
+<input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+<label>Email: <input type="text" name="email" class="form-control"></label>
+<label>Password: <input type="text" class="form-control" name="password"></label>
+<input class="btn btn-primary" type="submit" value="Submit">
+</form>
+</div>
