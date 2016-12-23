@@ -1,14 +1,11 @@
 class RunnersController < ApplicationController
-
+  def new
+  end
   def profile
     @runner = Runner.find(params[:id])
   end
   def edit
   	@runner=Runner.find(params[:id])
-  end
-  def leaderboard
-    @r=Runner.find(session[:user_id])
-  	@runner=Runner.order(shoe_size: :desc)
   end
   def update
     r=Runner.find(session[:user_id])
