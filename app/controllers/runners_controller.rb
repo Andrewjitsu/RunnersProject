@@ -3,7 +3,7 @@ class RunnersController < ApplicationController
     @runners=Runner.new
   end
   def profile
-    @runners = Runner.all
+    @runners = Runner.find(params[:id])
   end
   def edit
   	@runner=Runner.find(params[:id])
@@ -19,4 +19,3 @@ class RunnersController < ApplicationController
       params.require(:runner).permit(:first_name, :last_name, :email, :password, :gender, :shoe_size, :avatar)
     end
 end
-

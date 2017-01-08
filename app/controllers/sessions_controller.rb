@@ -13,9 +13,11 @@ class SessionsController < ApplicationController
     r = Runner.find_by_email(params[:email])
       if ( r && r.authenticate(params[:password]))
         session[:user_id] = r.id
+
         redirect_to "/runners/#{r.id}"
       else
-        redirect_to "/"
+        flash[:error] = "Invalid Login Information"
+        redirect_to "/runners"
       end
   end
 

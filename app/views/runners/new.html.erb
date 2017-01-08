@@ -1,7 +1,7 @@
 
 <section class="container">
 	 <section id="four" class="wrapper style5 special">
-         
+
     </section>
 	<%if flash[:notice]%>
 	<%=flash[:notice]%>
@@ -16,7 +16,7 @@
 		<%= f.label :email %>
 		<%= f.text_field :email %>
 		<%= f.label :password %>
-		<%= f.text_field :password %>
+		<%= f.password_field :password %>
 		<%= f.label :gender %>
 		<%= f.text_field :gender %>
 		<%= f.label :shoe_size %>
@@ -49,6 +49,9 @@
 		</div>
 			<input type="submit" class="button special" value="Register">
 	</form> -->
+	<% if flash[:error] %>
+    <div class="error"><%= flash[:error] %></div>
+  <% end %>
 	<h3>Login</h3>
 	<form method="post" action="/login">
 	<input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
@@ -57,7 +60,7 @@
 				<input type="email" name="email" id="email" value="" placeholder="Email" />
 			</div>
 			<div class="6u$ 12u$(xsmall)">
-				<input type="text" name="password" id="password" value="" placeholder="Password" /><br>
+				<input type="password" name="password" id="password" value="" placeholder="Password" /><br>
 			</div>
 		</div>
 			<input type="submit" class="button special" value="Login">

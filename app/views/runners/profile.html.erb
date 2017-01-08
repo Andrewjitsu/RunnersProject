@@ -11,25 +11,25 @@
 <div class="profile">
 
   <% if @runners %>
-  <% @runners.each do |r|%>
+
     <div class="runner">
       <fieldset class="photo">
-        <img class="img-circle"<%= image_tag r.avatar.url %> >
+        <img class="img-circle"<%= image_tag @runners.avatar.url %> >
       </fieldset>
-    
-      <h2><%= r.first_name%></h2>
-      <h2><%= r.last_name%></h2>
-      <p> Gender: <%=r.gender%> </p>
-      <p> Email: <%=r.email%> </p>
+
+      <h2><%= @runners.first_name%></h2>
+      <h2><%= @runners.last_name%></h2>
+      <p> Gender: <%=@runners.gender%> </p>
+      <p> Email: <%=@runners.email%> </p>
     <fieldset>
-      <span> <%=r.shoe_size%> </span><br>
+      <span> <%=@runners.shoe_size%> </span><br>
       Shoe Size
     </fieldset>
     <%end%>
-    <%end%>
+
 </div><br>
 
-</div> 
+</div>
 
 
 
@@ -80,9 +80,6 @@
     </a>
   </div>
      <!-- <section id="four" class="wrapper style4 special">
-          
+
     </section> -->
 </div>
-
-
-      
