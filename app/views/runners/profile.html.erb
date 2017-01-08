@@ -13,18 +13,16 @@
   <% if @runners %>
 
     <div class="runner">
-      <fieldset class="photo">
+      <div class="photo">
         <img class="img-circle"<%= image_tag @runners.avatar.url %> >
-      </fieldset>
-
+      </div>
+      <div class ='photoinfo'>
       <h2><%= @runners.first_name%></h2>
       <h2><%= @runners.last_name%></h2>
       <p> Gender: <%=@runners.gender%> </p>
       <p> Email: <%=@runners.email%> </p>
-    <fieldset>
-      <span> <%=@runners.shoe_size%> </span><br>
-      Shoe Size
-    </fieldset>
+      <p>Shoe Size: <%=@runners.shoe_size%> </p><br>
+    </div>
     <%end%>
 
 </div><br>
@@ -52,20 +50,23 @@
         <img src="http://sneakerbardetroit.com/wp-content/uploads/2015/12/kobe-x-elite-what-the.jpg">
         <div class="carousel-caption">
           <h3>Kobe X Elite</h3>
-          <p>The Nike Kobe X Elite captures Kobe Bryant's unmatchable on-court legacy with distinctive innovation and style. </p>
+          <p>The "What-The" edition of the Kobe X Elite</p>
         </div>
       </div>
 
       <div class="item">
         <img src="http://sneakerbardetroit.com/wp-content/uploads/2016/04/Nike-Kobe-11-Carpe-Diem-Official-Look-6.jpg">
+        <div class="carousel-caption">
+          <h3>Kobe XI Elite</h3>
+          <p>The Black Edition of Kobe XI</p>
+        </div>
       </div>
-
       <div class="item">
         <img src="http://images.solecollector.com/complex/image/upload/c_fill,q_90,w_800/kobe-11-jordan-3-02_q6inbi.jpg">
-      </div>
-
-      <div class="item">
-        <img src="http://images.solecollector.com/complex/image/upload/c_fill,q_90,w_800/kobe-11-jordan-3-02_q6inbi.jpg">
+        <div class="carousel-caption">
+          <h3>Kobe XI</h3>
+          <p>The Dark Version Edition of Kobe XI</p>
+        </div>
       </div>
     </div>
 
